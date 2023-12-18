@@ -155,7 +155,7 @@ class Environ:
     def renew_channels_fastfading(self):
 
         """ Renew fast fading channel """
-        # scaling with sqrt(2) is meant to bring down the exponential distribution lambda to one.
+        # scaling with sqrt(2) is 0t to bring down the exponential distribution lambda to one.
         V2V_channels_with_fastfading = np.repeat(self.V2V_channels_abs[:, :, np.newaxis], self.n_RB, axis=2)
         # self.V2V_channels_with_fastfading = V2V_channels_with_fastfading
         # self.Nakagami_fast_fading = V2V_channels_with_fastfading
@@ -229,7 +229,7 @@ class Environ:
                 if self.V2V_demand[i] <= 0:
                     self.V2V_demand[i] = 0
             else:
-                snr_rev = snr_rev*7 # 5 previously
+                snr_rev = snr_rev*2 # 5 previously
 
             per_user_reward[i] = v2v_rev + snr_rev
 
