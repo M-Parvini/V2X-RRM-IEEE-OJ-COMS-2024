@@ -234,7 +234,8 @@ class Environ:
             per_user_reward[i] = v2v_rev + snr_rev
 
         success_rate_[self.V2V_demand <= 0] = 1
-        Reward = np.mean(per_user_reward)
+        Reward = np.sum(per_user_reward)
+        #Reward = min(per_user_reward)
 
         return np.array([Reward]), V_rate, self.V2V_demand, success_rate_, SINR
 
