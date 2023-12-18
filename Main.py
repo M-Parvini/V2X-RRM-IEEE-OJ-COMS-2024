@@ -139,7 +139,7 @@ if __name__ == "__main__":
     parser.add_argument("--simulation_time", type=int, default=30, help='Simulation time')
     parser.add_argument("--n_episodes_train", type=int, default=30, help='total training episodes')
     parser.add_argument("--n_episodes_test", type=int, default=10, help='total test episodes')
-    parser.add_argument("--CAM_size", type=float, default=6500 * 8, help='total CAM message payload (bits)')
+    parser.add_argument("--CAM_size", type=float, default=6000 * 8, help='total CAM message payload (bits)')
     parser.add_argument("--MATI", type=int, default=149, help='Maximum Allowable Transmission Interval')
     parser.add_argument("--full_data_loader", type=int, default=20, help="full data to compute the total gradient")
     parser.add_argument("--Algorithm", type=str, default='opt_fair',
