@@ -1,5 +1,5 @@
 # V2X-RRM-IEEE-OJ-COMS-2024
-Simulation code of the paper ():
+Simulation code of the paper:
     ["Resource Allocation in V2X Networks: From Classical Optimization to Machine Learning-Based Solutions"](https://ieeexplore.ieee.org/abstract/document/10477602)
 
 
